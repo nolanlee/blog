@@ -9,7 +9,7 @@ deploy:
   provider: pages
   skip-cleanup: true
   local_dir: docs/.vuepress/dist
-  github-token: c68fb892f3deae0397546bb29e1d3632175c2cee
+  github-token: f623246de128d55b91b81bd5b676bc7d825a3829
   keep-history: true
   on:
     branch: vuepress
