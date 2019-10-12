@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - lts/*
+install:
+  - npm ci
+script:
+  - npm run docs:build
+deploy:
+  provider: pages
+  skip-cleanup: true
+  local_dir: docs/.vuepress/dist
+  github-token: f92d7b7f050aa5164b4e9dd4904db53ce3a8b1f7
+  keep-history: true
+  on:
+    branch: vuepress

@@ -2,4 +2,4 @@
 
 [Nolan&#39;s Blog Source Code](http://referenceerror.net)
 
-> Powered by Nuxt
+> Powered by Vuepress
