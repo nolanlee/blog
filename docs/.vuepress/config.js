@@ -1,4 +1,5 @@
 module.exports = {
+  base: '/blog/',
   title: 'Fresh Meat',
   description: 'Nolan\'s Blog',
   theme: '@vuepress/blog',
