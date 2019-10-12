@@ -21,6 +21,14 @@
     "@vuepress/theme-blog": "^1.2.6",
     "imagemin": "^7.0.0",
     "imagemin-webp": "^5.1.0",
-    "vuepress": "^1.2.0"
+    "vuepress": "^1.2.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^6.1.0",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.4",
+    "husky": "^2.6.0",
+    "lint-staged": "^8.2.1"
   }
 }
