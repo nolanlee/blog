@@ -1,7 +1,9 @@
 ---
-title: 用够酷的Jekyll搭建够酷的博客
+date: 2014-3-27
+author: Nolan
 location: Shanghai
 ---
+# 用够酷的Jekyll搭建够酷的博客
 
 Hey，如果你想快速地开发一个够酷够独特的博客网站，可是不会用内容管理系统；或者不想使用免费的但是因各种限制而体验糟糕的博客托管平台；又或者像我一样是个专注于前端，对后端开发和数据库一头雾水的程序员，那么你一定要了解接下来我要介绍的这个简洁的，面向博客的静态页面生成引擎 [**Jekyll**](http://jekyllrb.com/) 以及 [**Github Pages**](http://pages.github.com/) 服务。
 
