@@ -2,6 +2,8 @@
 date: 2019/12/11
 author: Nolan
 location: Beijing
+tags:
+  - Fresh Tech
 ---
 # Hello, WebAssembly
 

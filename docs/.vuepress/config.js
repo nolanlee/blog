@@ -1,26 +1,30 @@
 module.exports = {
   base: '/blog/',
-  title: 'Fresh Meat',
+  title: '🥩 Fresh Meat',
   description: 'Nolan\'s Blog',
   theme: '@vuepress/blog',
-  head: [
-    ['link', { rel: 'icon', href: '/images/logo.jpeg' }]
-  ],
-  plugins: [
-    [
-      '@vuepress/blog',
+  themeConfig: {
+    dateFormat: 'YYYY-MM-DD',
+    nav: [
       {
-        directories: [
-          {
-            // Unique ID of current classification
-            id: 'post',
-            // Target directory
-            dirname: '_posts',
-            // Path of the `entry page` (or `list page`)
-            path: '/',
-          },
-        ],
+        text: 'Home',
+        link: '/',
+      },
+      {
+        text: 'Tags',
+        link: '/tag/',
       },
     ],
-  ],
+    modifyBlogPluginOptions(blogPluginOptions) {
+      const comment = {
+        service: 'disqus',
+        shortname: 'nolanleee',
+      }
+
+      return { ...blogPluginOptions, comment }
+    },
+  },
+  head: [
+    ['link', { rel: 'icon', href: '/images/logo.jpeg' }]
+  ]
 }

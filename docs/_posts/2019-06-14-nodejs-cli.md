@@ -2,6 +2,8 @@
 date: 2019/06/14
 author: Nolan
 location: Beijing
+tags:
+  - Fresh Tech
 ---
 # Node.js CLI 常用工具
 

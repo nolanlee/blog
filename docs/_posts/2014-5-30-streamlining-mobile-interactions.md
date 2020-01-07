@@ -2,6 +2,8 @@
 date: 2014-5-30
 author: Nolan
 location: Shanghai
+tags:
+  - Good Practice
 ---
 # 流线型移动交互
 

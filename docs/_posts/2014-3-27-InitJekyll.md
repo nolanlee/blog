@@ -2,6 +2,8 @@
 date: 2014-3-27
 author: Nolan
 location: Shanghai
+tags:
+  - Fresh Tech
 ---
 # 用够酷的Jekyll搭建够酷的博客
 

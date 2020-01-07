@@ -2,6 +2,8 @@
 date: 2015-8-27
 author: Nolan
 location: Beijing
+tags:
+  - Note
 ---
 # HTTP 概要
 
