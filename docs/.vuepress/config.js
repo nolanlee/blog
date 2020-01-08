@@ -20,6 +20,7 @@ module.exports = {
         service: 'disqus',
         shortname: 'nolanleee',
       }
+      blogPluginOptions.directories[0].pagination.lengthPerPage = 10
 
       return { ...blogPluginOptions, comment }
     },
