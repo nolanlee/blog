@@ -18,17 +18,17 @@
     }
   },
   "devDependencies": {
-    "@vuepress/theme-blog": "^1.4.0",
-    "babel-eslint": "^10.0.1",
+    "@vuepress/theme-blog": "^1.7.1",
+    "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.9.0",
-    "eslint-plugin-nuxt": ">=0.5.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "husky": "^4.0.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "husky": "^4.3.8",
     "imagemin": "^7.0.1",
     "imagemin-webp": "^5.1.0",
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
-    "vuepress": "^1.2.0"
+    "vuepress": "^1.9.10"
   }
 }
