@@ -5,12 +5,13 @@
   "author": "nolanlee",
   "private": true,
   "scripts": {
+    "prepare": "husky",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+    "lint": "lint-staged"
   },
   "lint-staged": {
-    "*.{js,vue}": "eslint"
+    "*.{js,vue}": "eslint --fix"
   },
   "husky": {
     "hooks": {
@@ -18,17 +19,20 @@
     }
   },
   "devDependencies": {
-    "@vuepress/theme-blog": "^1.7.1",
+    "@vuepress/theme-blog": "^2.3.3",
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.15.0",
+    "eslint": "^9.11.1",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-nuxt": "^4.0.0",
-    "eslint-plugin-prettier": "^3.4.1",
-    "husky": "^4.3.8",
-    "imagemin": "^7.0.1",
-    "imagemin-webp": "^5.1.0",
-    "lint-staged": "^9.5.0",
-    "prettier": "^1.19.1",
+    "eslint-plugin-prettier": "^5.2.1",
+    "husky": "^9.1.6",
+    "imagemin": "^9.0.0",
+    "imagemin-webp": "^8.0.0",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
     "vuepress": "^1.9.10"
+  },
+  "dependencies": {
+    "nolan-blog": "link:"
   }
 }
