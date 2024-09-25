@@ -1,0 +1,46 @@
+name: Deploy to GitHub Pages
+
+# 当推送到 master 分支时触发工作流
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 检出当前仓库代码
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    # 设置 Node.js 版本
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 'lts/*'  # 与 Travis CI 中的 lts/* 保持一致
+
+    # 启用 Corepack 并准备 pnpm
+    - name: Enable Corepack and setup pnpm
+      run: |
+        corepack enable
+        corepack prepare pnpm@latest-9 --activate
+        pnpm config set store-dir ~/.pnpm-store
+
+    # 安装依赖
+    - name: Install dependencies
+      run: pnpm install
+
+    # 构建 VuePress 文档
+    - name: Build the docs
+      run: pnpm run docs:build
+
+    # 部署到 GitHub Pages
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}  # 使用 GitHub Actions 提供的 token
+        publish_dir: docs/.vuepress/dist  # 指向构建后的文档目录
+        keep_files: true  # 保持历史记录
+        allow_empty_commit: false  # 跳过空提交

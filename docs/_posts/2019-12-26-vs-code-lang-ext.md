@@ -1,5 +1,5 @@
 ---
-date: 2019/12/26
+date: 2019-12-26
 author: Nolan
 location: Beijing
 tags:
